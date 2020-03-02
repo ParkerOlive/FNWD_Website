@@ -1,0 +1,568 @@
+@font-face { font-family: Trend_Slab; src: url('Latinotype - TrendSlabFour.otf'); } 
+@font-face { font-family: Klavika; src: url('ufonts.com_klavika-bold-opentype.otf'); }
+@font-face { font-family: Maian; src: url('MAIAN.TTF'); }
+html {
+	scroll-behavior: smooth;
+  	height: 100%;
+}
+
+img {
+    image-orientation: from-image;
+}
+
+/* {
+  border: 1px solid #f00 !important;
+}*/
+
+.container{
+	width: 100%;
+	margin: 0px;
+	background: #ffffff;
+	font-size: 24px;
+	overflow: hidden;
+}
+/*===================== Home Page Parallax images =====================*/
+.parallax_1{
+	background: url('img/Fine_Art/TAM_Front.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: scroll;
+	height: 350px;
+}
+.parallax_2{
+	background: url('img/Fine_Art/Lemay_2015.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: scroll;
+	height: 350px;
+}
+
+.parallax_3{
+	background: url('img/Fine_Art/FNWDChristmasSet.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: scroll;
+	height: 350px;
+}
+
+.parallax_4{
+	background: url('img/Fine_Art/FNWDChristmasSetBacks.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: scroll;
+	height: 350px;
+}
+/*===================== /Home Page Parallax images =====================*/
+
+/*===================== Process Page Parallax images =====================*/
+.prep_1{
+	background: url('img/Process/Woodland Zoo 2010.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: scroll;
+	height: 350px;
+}
+
+.prep_2{
+	background: url('img/Process/Prep.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: scroll;
+	height: 350px;
+}
+.prep_3{
+	background: url('img/Process/Blasting.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: scroll;
+	height: 350px;
+}
+
+.prep_4{
+	background: url('img/Fine_Art/FNWDChristmasSet.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: scroll;
+	height: 350px;
+}
+/*===================== /Process Page Parallax images =====================*/
+
+.NameTitle { 
+	font-family: Trend_Slab; 
+	font-size: 40px;
+	margin-right: 57%;
+	margin-left: 43%;
+}
+.logo {
+	background: url('img/logo_No_Words.jpg') no-repeat center;
+	background-size: 500px 400px;
+	margin-right: 0%;
+	margin-left: 0%;
+	margin-top: 0px;
+	height: 300px;
+	overflow: hidden;
+	
+}
+.SectionTitle { 
+	font-family: Trend_Slab; 
+	font-size: 36px;
+}
+
+.SmallTitle { 
+	font-size: 28px;
+	margin-bottom: 0px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.ContactText {
+	font-size: 18px;
+	margin: 0px;
+}
+
+
+.gallery{
+  display: flex;
+  font-size: 24px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+figure{
+  width: 200px;
+}
+figure img{
+  width: 100%;
+}
+figure figcaption{
+  text-align: center;
+}
+
+/*=============== Contact Us ===============*/
+
+.ContactArea {
+	margin-left: 21%;
+	margin-right: 10%;
+	margin-bottom: 20px;
+}
+.ContactColumn {
+  float: left;
+  width: 30%;
+  min-width: 200px;
+}
+
+
+/* Clear floats after the columns */
+.ContactRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.SocialLogo{
+	height: 60px; 
+	width: 60px; 
+	vertical-align: middle;  
+	margin-right: 20%
+}
+.SocialText{
+	font-family: Klavika; 
+	text-decoration: none;
+	text-align: right;
+	margin-right: 0%;
+	vertical-align: middle;
+	font-size: 24px;
+}
+.button {
+	font-family: 'Maian'; 
+  background-color: #9f003f;
+  border: solid;
+  border-width: 8px;
+  border-color: #8a002a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.button_small {
+	font-family: 'Maian'; 
+	background-color: #9f003f;
+  	border: solid;
+  	border-width: 8px;
+  	border-color: #8a002a;
+  	color: white;
+  	padding: 20px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	margin: 4px 2px;
+  	border-radius: 12px;
+	padding: 5px;
+	font-size: 16px;
+}
+.GalleryTile{
+	text-decoration:none;
+	display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+
+}
+.GalleryTile:hover{
+	background-color: #eeeeee;
+}
+
+.gallerylable{
+	text-align: center;
+	margin: auto;
+}
+
+.button:hover{
+	background-color: #8a002a;
+	border-color: #9f003f;
+	color: white;
+	text-decoration: none;
+}
+.button:active{
+	background-color: #6a000a;
+	border-color: #9f003f;
+	color: white;
+	text-decoration: none;
+}
+
+.button_small:hover{
+	background-color: #8a002a;
+	border-color: #9f003f;
+	color: white;
+	text-decoration: none;
+}
+.button_small:active{
+	background-color: #6a000a;
+	border-color: #9f003f;
+	color: white;
+	text-decoration: none;
+}
+
+a:link{
+	color: #0000aa;
+}
+a:hover{
+	color: #8a002a;
+	text-decoration: underline;
+}
+/*=============== /Contact Us ===============*/
+
+
+/*=============== Gallery ===============*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.GalleryBackground{
+	background: #ffffff; 
+	width: 100%;
+}
+
+
+/*=============== /Gallery ===============*/
+
+/*===============  Navbar  ===============*/
+
+.NavText {
+	font-size: 24px;
+	font-family: 'Maian';
+	cursor: pointer; 
+	cursor: hand;
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  z-index: 100;
+}
+.hamburgerIcon {
+	width: 60px;
+	float: left;
+	width: auto;
+	padding: 15px;
+	color: #f2f2f2;
+	text-align: left;
+	text-decoration: none;
+}
+
+
+/* Navbar links */
+#navbar a {
+  width: 100%;
+  float: left;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar a:hover{
+	text-decoration: underline;
+	background-color: #222;
+}
+
+.myLinks {
+	display: none;
+}
+
+.navbarName {
+  float: right;
+  display: none;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+
+
+.content{
+	font-size: 24px;
+	width: 100%;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topname {
+	display: block;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 57px;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+/*===============  /Navbar  ===============*/
+
+#leftNavSection {
+  float: left;
+  margin-right: 0px;
+  min-width: 25%;
+  text-align: right;
+}
+@media only screen and (max-width: 700px) {
+  #leftNavSection {
+    text-align: left;
+  }
+}
+#rightNavSection {
+  float: right;
+  margin-right: 0px;
+  text-align: right;
+}
+@media only screen and (max-width: 700px) {
+  #rightNavSection {
+    text-align: left;
+  }
+}
+
+.contactform{
+	border: solid; 
+	margin: 15px; 
+	margin-top: 0px; 
+	width: 80%;
+	max-width:700px; 
+	font-size: 16px;
+	margin: auto; 
+	text-align: right; 
+	background-color: #f8f8f8;
+	border-color: #8a002a;
+}
+
+.contactsubmit{ 
+	margin: 15px; 
+	margin-top: 0px; 
+	width: 80%;
+	max-width:700px; 
+	font-size: 16px;
+	margin: auto; 
+	text-align: right; 
+}
+
+.submit{
+	float: left;
+	font-size: 20px;
+}
+
+
+
+
+@media all and (max-width: 600px)
+{
+
+    .ContactColumn  {
+    	float: none;
+ 	 	width: 100%;
+ 		/*min-width: 100%;
+ 		font-size: 400px;*/
+	}
+
+    .container {
+    	font-size: 20px;
+    }
+
+    .SocialText {
+    	font-size: 40px;
+    }
+
+    .SmallTitle {
+    	font-size: 45px;
+    }
+
+    .ContactText {
+    	font-size: 25px;
+
+    }
+
+    .ContactArea {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.button {
+		font-size: 40px;
+	}
+
+	.SocialLogo{
+		height:100px; 
+		width: 100px; 
+		vertical-align: middle;  
+		margin-right: 20%
+	}
+
+	.SectionTitle {
+		font-size: 40px;
+	}
+
+	.NameTitle { 
+		font-size: 35px;
+		margin-top: 15%;
+		margin-left: 30%;
+	}
+
+	.button_small {
+		padding: 5px;
+		font-size: 30px;
+	}
+
+	.gallery{
+		display: inline;
+  		font-size: 40px;
+	}
+
+	.anchor {
+    	top: -60px;
+	}
+
+	.sticky + .content {
+ 		padding-top: 47px;
+	}
+	.NavText {
+	font-size: 14px;
+	font-family: 'Maian';
+	}
+}
+
+@media all and (max-width: 500px)
+{
+	.NameTitle { 
+		font-size: 35px;
+		margin-top: 15%;
+		margin-left: 20%;
+	} 
+
+}
+
+.hidden{
+	display: none;
+}
+
+  /* MD  */ @media only screen and (min-width : 800px)  {
+  				.parallax_1, .parallax_2, .parallax_3, .parallax_4{
+  					background-attachment: fixed;
+  					height: 500px;
+
+  				}
+
+  				.prep_1, .prep_2, .prep_3, .prep_4{
+  					background-attachment: fixed;
+  					height: 500px;
+  				}
+
+  				div.icon, .fa, .fa-bars {
+					display: none;
+				}
+
+				.myLinks {
+					display: block;
+				}
+
+				#navbar a {
+					float: left;
+					color: #f2f2f2;
+					text-align: center;
+					padding: 15px;
+					text-decoration: none;
+					width: auto;
+				}
+
+				
+  			} // Ok NOW the background is fixed.
+  /* LG  */ @media only screen and (min-width : 1200px) {
+  				.parallax_1, .parallax_2, .parallax_3, .parallax_4{
+  					background-attachment: fixed;
+  					height: 500px;
+  				}
+  				.prep_1, .prep_2, .prep_3, .prep_4{
+  					background-attachment: fixed;
+  					height: 500px;
+  				}
+
+  				div.icon, .fa, .fa-bars {
+					display: none;
+				}
+
+				.myLinks {
+					display: block;
+				}
+
+				#navbar a {
+					float: left;
+					color: #f2f2f2;
+					text-align: center;
+					padding: 15px;
+					text-decoration: none;
+					width: auto;
+				}
+
+  			} // background is STILL fixed here.
+

@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Wineries</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css/lightbox.css" />
+		<script src="js/lightbox-plus-jquery.js"></script>
+		<script>
+    		lightbox.option({
+    	  	'fitImagesInViewport': false;
+    		})
+		</script>
+	</head>
+	<body style="margin: 0px;">
+		<a id="Home"></a>
+		<div style="width: 100%">
+				<div style="width: 100%; margin-left: 0%">
+					<a href="index.html" style=" width: 100px; z-index: 10 ;color:black; text-decoration:none; border-bottom-style: solid; border-bottom-color	: #8f8f8f;">
+
+						<div style=" margin-left: 25%;width: 50%; height: 300px; z-index: 10; position: absolute;"></div>
+						
+					</a>
+					<div class="logo">	
+							<p class="NameTitle"><br>Fresh<br>Northwest<br>Design</p>
+						</div>
+				</div>
+			</div>
+		<!-- Sticky Navbar -->
+			<div id="navbar" class="NavText">
+					<a href="./index.html">Home</a>
+  					<a onclick="document.getElementById('Home').scrollIntoView(true,{behavior: 'smooth', block: 'end', inline: 'nearest'});">Top</a>
+  					<a href="index.html#Galleries">Gallery</a>
+ 					<a href="index.html#About">About</a>
+  					<a href="Request_Quote.html">Contact</a>
+			</div>
+			<!-- /Sticky Navbar -->
+		<div class="content" style="border-top-style: solid; border-top-color: #8f8f8f; border-bottom-style: solid; border-bottom-color: #8f8f8f; width:99.9%">
+			<div class="container" style="margin: 0px">
+				<p class="SectionTitle" style="widht: 90%">Custom Etched Bottles for Wineries</p>
+				<div style="margin: 15px">
+					<p>	
+						Customers appreciate the artistry and attention to detail, which ultimately increases the value of their wine bottles. In fact, many of these bottles end up as highly prized collector's items.
+					</p>
+					<p>Our process is designed to ensure we take as much care of your bottles as you do with your wines.</p>
+				</div>
+			</div>
+		</div>
+		<div class="GalleryBackground">
+		<div class="row">
+			<div class="column" id="column_1">
+				<!-- Image Column 1 (Gets filled by javasctipt) -->
+			</div>
+			<div class="column" id="column_2">
+				<!-- Image Column 2 (Gets filled by javasctipt) -->
+			</div>
+			<div class="column" id="column_3">
+				<!-- Image Column 3 (Gets filled by javasctipt) -->
+			</div>
+			<div class="column" id="column_4">
+				<!-- Image Column 3 (Gets filled by javasctipt) -->
+			</div>
+			<div class="column" id="column_5">
+				<!-- Image Column 3 (Gets filled by javasctipt) -->
+			</div>
+		</div>
+		<!-- Column 1 -->
+		<script src="js/Gallery_Column.js"></script>
+		<script>
+			/*====================================== Create Image Items ======================================*/
+			//Images For Column 1
+			var column_1_array = [];
+			//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+			column_1_array.push({file:"img/Wineries/Araujo-btm-500.jpg", 						disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/B-Frog-500.jpg", 							disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/Canoe-ridge-500.jpg", 						disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/Cayuse-500.jpg", 							disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/Conn-Creek-500.jpg", 						disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/CSM-500.jpg", 								disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/CSM-Artist-Series-2010-Close-500.jpg", 		disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/DeLille-500.jpg", 							disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/Doy-barn-500.jpg", 							disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/Dunham-500.jpg", 							disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/Family_Harvest.jpg", 						disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/fnwd-002-500.jpg", 							disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-006-500-010410.jpg", 					disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-007-500-010410.jpg", 					disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-009-1009-500.jpg", 					disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-012-500-010410.jpg", 					disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-017-500-010410.jpg", 					disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/fnwd-020-326.jpg", 							disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-028-010510-500.jpg", 					disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-031-010510-500.jpg", 					disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-032-1009-500.jpg", 					disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-033-010510-500.jpg", 					disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-034-326.jpg", 							disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-034-500-010410.jpg", 					disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/fnwd-034b-500.jpg", 						disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-035-326.jpg", 							disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/fnwd-035b-326.jpg", 						disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-036-500.jpg", 							disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-039-326.jpg", 							disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-039-500-010410.jpg", 					disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-040-326.jpg", 							disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/FNWD-044-500.jpg", 							disc:"My Caption 1"});
+			column_1_array.push({file:"img/Wineries/AWW-Tranche-Back-500.jpg", 					disc:"My Caption 1"});
+			
+			
+
+			//Images For Column 2
+			var column_2_array = [];
+			//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+			column_2_array.push({file:"img/Wineries/fnwd-114-500.jpg", 							disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-124-1009-500.jpg", 					disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-136-1009-500.jpg", 					disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-1to1-517-500.jpg", 					disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-30-517-500.jpg", 						disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-31-517-500.jpg", 						disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/fnwd-32-326.jpg", 							disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/fnwd-36-326.jpg", 							disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/fnwd-38-326.jpg", 							disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/fnwd-48-500.jpg", 							disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/fnwd-49-500.jpg", 							disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/fnwd-60-500.jpg", 							disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-aMaurice-1019-500.jpg", 				disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-aMaurice-803-500.jpg", 				disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-AndrewWillCabSauv-803-500.jpg", 		disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-Argyle-721-500.jpg", 					disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-BarageCellars-721-500.jpg", 			disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-BeringerCabSauv-1019-500.jpg", 		disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/fnwd-Boudreaux-3-11-500.jpg", 				disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-Cambium-721-500.jpg", 					disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-ChateauStJeanChard-1019-500.jpg", 		disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-ColumbiaCrestReserve-803-500.jpg", 	disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-CubanisimoEdited-803-500.jpg", 		disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-ElkCove-721-500.jpg", 					disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-GenesisMeritage-721-500.jpg", 			disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-HillCrest1-517-500.jpg", 				disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-HogueRiesling-721-500.jpg", 			disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-JetBlack-721-500.jpg", 				disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-NewWallaWallaVintners-721-500.jpg", 	disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/FNWD-NorthstarNEWLabel-721-500.jpg", 		disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/fnwd-PageNorsemanRedZeppelin-3-11-500.jpg", disc:"My Caption 2"});
+			column_2_array.push({file:"img/Wineries/fnwd-PandoraCellars-3-11-500.jpg", 			disc:"My Caption 2"});
+			
+			
+			
+			
+
+			//Images For Column 3
+			var column_3_array = [];
+			//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+		
+			column_3_array.push({file:"img/Wineries/FNWDRawA170-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FNWDRawA77-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FNWDRawBA8-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/fnwdredo-1-326.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/fnwdredo-6-326.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FNWD_5795-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FNWD_5805-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FNWD_5825-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FNWD_5841-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FNWD_5846-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FNWD_5884-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FNWD_5915-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FNWD_5918-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FNWD_5924-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FNWD_5952-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FNWD_5975-lg.jpg", 			disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FNWD_5984-lg.jpg", 			disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FRESHNWD-072-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FRESHNWD-079-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FRESHNWD-087-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FRESHNWD-092-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FRESHNWD-100-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FreshNWD13B-500.jpg", 		disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FreshNWD2008-033-500.jpg", 	disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FreshNWD2008-043-500.jpg", 	disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FreshNWD2008-080-500.jpg", 	disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FreshNWD2008-085-500.jpg", 	disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FreshNWD2008-114-500.jpg", 	disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FreshNWD2008-124-500.jpg", 	disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FreshNWD2008-133-500.jpg", 	disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FreshNWD2008-151-500.jpg", 	disc:"My Caption 3"});
+			column_3_array.push({file:"img/Wineries/FreshNWD2008-169-500.jpg", 	disc:"My Caption 3"});
+			
+			//Images For Column 4
+			var column_4_array = [];
+			//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+
+			column_4_array.push({file:"img/Wineries/FNWD-045-010410.jpg", 						disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-047-500.jpg", 							disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-056-326.jpg", 							disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-058-500.jpg", 							disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-060-1009-500.jpg", 					disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/fnwd-065-500.jpg", 							disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-066-1009-500.jpg", 					disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/fnwd-072-500.jpg", 							disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-076-1009-500.jpg", 					disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-085-1009-500.jpg", 					disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-093-326.jpg", 							disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-094-1009-500.jpg", 					disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-095-1009-500.jpg", 					disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-096-517-500.jpg", 						disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-109-500-010410.jpg", 					disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/fnwd-11-326.jpg", 							disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-111-500-010410.jpg", 					disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-112-1009-500.jpg", 					disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-113-1009-500.jpg", 					disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/Whitman-500.jpg", 							disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/Lecole-chalk-500.jpg", 						disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/luna-500.jpg", 								disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/Make-Dash-Count-500.jpg", 					disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/NW-Totem-Grenache-500.jpg", 				disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/OakKnoll-500.jpg", 							disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/PageCellars-500.jpg", 						disc:"My Caption 4"});
+			//column_4_array.push({file:"img/Wineries/Paradux-500.jpg", 							disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/Pentad-500.jpg", 							disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/Reininger-500.jpg", 						disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/seven-hills-500.jpg", 						disc:"My Caption 4"});
+			//column_4_array.push({file:"img/Wineries/seven-hills-close-500.jpg", 				disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FNWD-SequoiaCabernetFullEtch-721-500.jpg", 	disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/fnwd-Pirouette-3-11-500.jpg", 				disc:"My Caption 4"});
+			column_4_array.push({file:"img/Wineries/FreshNWD2008-182-500.jpg", 					disc:"My Caption 4"});
+
+			
+			
+			//Images For Column 5
+			var column_5_array = [];
+			//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+
+			column_5_array.push({file:"img/Wineries/FNWD-SheridanWilkensBack-721-500.jpg", 	disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWD-SpanishSons-721-500.jpg", 			disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWD-SunRa-721-500.jpg", 				disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWD-TenorMerlot-517-500.jpg", 			disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWD21edit-500.jpg", 					disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWDesign-067-326.jpg", 				disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWDesign-074-326.jpg", 				disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWDesign-099-326.jpg", 				disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWDesign-103-326.jpg", 				disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWDesign-112-326.jpg", 				disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWDesign-116-326.jpg", 				disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWDesign-128-326.jpg", 				disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWDesign-135-326.jpg", 				disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWDesign-206-326.jpg", 				disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWDesign056-326.jpg", 					disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWDkilngounds-027-500.jpg", 			disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWDLange19-500.jpg", 					disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWDPGriffey-8-500.jpg", 				disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/FNWDRawA136-500.jpg", 					disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/Thurston-Wolfe-The-Teacher-500.jpg", 	disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/Sorella-Fully-Painted-500.jpg", 		disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/freshNWDesign2Afull-500.jpg", 			disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/freshNWDesign30A-500.jpg", 				disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/Frutta-di-Luna-500.jpg", 				disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/Garfield_Hogue-500.jpg", 				disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/GordonBros-500.jpg", 					disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/grace-fam-500.jpg", 					disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/Hedges-500.jpg", 						disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/Hightower-500.jpg", 					disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/Hogue-500.jpg", 						disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/Lecole-btm-500.jpg", 					disc:"My Caption 5"});
+			column_5_array.push({file:"img/Wineries/Araujo-top-500.jpg", 					disc:"My Caption 5"});
+			
+			
+			/*====================================== /Create Image Items ======================================*/
+
+
+
+
+
+
+
+			/*====================================== Create HTML Code ======================================*/
+			//Put HTML into Elements of ID
+			document.getElementById("column_1").innerHTML = CreateColumn(column_1_array);
+			document.getElementById("column_2").innerHTML = CreateColumn(column_2_array);
+			document.getElementById("column_3").innerHTML = CreateColumn(column_3_array);
+			document.getElementById("column_4").innerHTML = CreateColumn(column_4_array);
+			document.getElementById("column_5").innerHTML = CreateColumn(column_5_array);
+
+			/*====================================== /Create HTML Code ======================================*/
+
+		</script>
+
+		<script>
+			var elements = document.getElementsByClassName("column");
+
+			// Declare a "loop" variable
+			var i;
+
+			for (i = 0; i < elements.length; i++) {
+				elements[i].style.flex = "5%";
+			}
+		</script>
+		</div>
+			<!------------------------------------------------------ Contact Us ------------------------------------------------------>
+			<a class="anchor" name="Contact"></a>
+			<div style="border-top-style: solid; border-top-color: #8f8f8f;">
+			<p style="margin: 10px;"class="SectionTitle">Contact US</p>
+
+			
+			<div class="ContactArea">
+				<div class="ContactRow">
+  					<div class="ContactColumn">
+  						<p class="SmallTitle">Phone</p>
+						<a href="tel:2538575300" class="ContactText" title="Call Us">253-857-5300</a>
+						<p class="SmallTitle">Email</p>
+						<a href="mailto:Info@freshnwdesign.com" class="ContactText" title="Send us an Email">Info@freshnwdesign.com</a>
+						<p class="SmallTitle">Address</p>
+						<p class="ContactText">915 26th Avenue Northwest<br>Gig Harbor, WA, 98335<br>Suite B5<br>
+						<a href="http://www.google.com/maps/search/Fresh+Northwest+Design+915+26th+Avenue+Northwest+Gig+Harbor+WA+98335+Suite+B5" title="Get Directions"target="_blank" class="ContactText">Map & Directions</a></p>
+  					</div>
+  					<div class="ContactColumn">
+  						<br>
+  						<br>
+  						<div>
+  							<a href="https://www.facebook.com/freshnwdesign/" class="SocialText" target="_blank" title="Follow us on Facebook">
+  								<span class="SocialText">Facebook</span>
+  								<img src="img/Facebook_Wine.jpg" class="SocialLogo"/>
+  							</a>
+  						</div>
+  						<br>
+  						<div>
+  							<a href="https://www.instagram.com/freshnorthwestdesign/" class="SocialText" target="_blank" title="Follow us on Instagram">
+  								<span class="SocialText">Instagram</span>
+  								<img src="img/Instagram_Wine.jpg" class="SocialLogo"/>
+  							</a>
+  						</div>
+  					</div>
+  					<div class="ContactColumn">
+  						<br>
+  						<br>
+  						<a href="./Request_Quote.html#Request_Quote" class="button" style="color: white">Request Quote</a> 
+  					</div>
+				</div>
+				
+			</div>
+			</div>
+			<!------------------------------------------------------ /Contact Us ------------------------------------------------------>
+			<!------------------------------------------------------ Navbar Script ------------------------------------------------------>
+		<script type="text/javascript">
+				// When the user scrolls the page, execute myFunction
+				window.onscroll = function() {myFunction()};
+	
+				// Get the navbar
+				var navbar = document.getElementById("navbar");
+	
+				// Get the offset position of the navbar
+				var sticky = navbar.offsetTop;
+				
+				// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+				function myFunction() {
+					if (window.pageYOffset >= sticky) {
+						navbar.classList.add("sticky")
+					} else {
+						navbar.classList.remove("sticky");
+					}
+				}
+			</script>
+			<!------------------------------------------------------ /Navbar Script ------------------------------------------------------>
+	</body>
+</html>

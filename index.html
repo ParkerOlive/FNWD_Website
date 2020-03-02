@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Fresh Northwest Design Test</title>
+		<link rel="stylesheet" href="style.css">
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body style="margin: 0;">
+		
+		<div class="container">
+			<a id="Home"></a>
+			<!-- Logo and Title -->
+			<div style="width: 100%">
+				<div style="width: 100%; margin-left: 0%">
+					<a href="index.html" style=" width: 100px; z-index: 10 ;color:black; text-decoration:none; border-bottom-style: solid; border-bottom-color	: #8f8f8f;">
+
+						<div style=" margin-left: 25%;width: 50%; height: 300px; z-index: 10; position: absolute;"></div>
+						
+					</a>
+					<div class="logo">	
+							<p class="NameTitle"><br>Fresh<br>Northwest<br>Design</p>
+						</div>
+				</div>
+			</div>
+			<!-- /Logo and Title -->
+			
+			<!-- Sticky Navbar -->
+			<div id="navbar" class="NavText">
+				<p id="navname" class="navbarName" style="text-align: right; margin: 0px">
+					Fresh
+					Northwest
+					Design
+				</p>
+				<div class="icon">
+					<i class="hamburgerIcon" onclick="myHamburger()">
+   						<i class="fa fa-bars"></i>
+   					</i>
+   				</div>
+				<div class="myLinks" id="myLinks" style="margin: 0px">
+  					<a class="navEle" onclick="document.getElementById('Home').scrollIntoView(true,{behavior: 'smooth', block: 'end', inline: 'nearest'});">Home</a>
+ 					<a class="navEle" onclick="document.getElementById('Galleries').scrollIntoView(true,{behavior: 'smooth', block: 'end', inline: 'nearest'});">Gallery</a>
+ 					<a class="navEle" onclick="document.getElementById('About').scrollIntoView(true, {behavior: 'smooth', block: 'end', inline: 'nearest'});">About</a>
+ 					<a class="navEle" onclick="document.getElementById('Etching').scrollIntoView(true, {behavior: 'smooth', block: 'end', inline: 'nearest'});">Process</a>
+  					<a class="navEle" href="Request_Quote.html">Contact</a>
+  				</div>
+
+			</div>
+			<!-- /Sticky Navbar -->
+			
+			<div class ="content">
+
+				<div class="parallax_1">
+				<!-- Paralaxed Image 1 -->
+				</div>
+			
+				<div style="border-top-style: solid; border-top-color: #8f8f8f; border-bottom-style: solid; border-bottom-color: #8f8f8f;">
+					<a class="anchor" id="Galleries"></a>
+					<p style="margin: 10px;" class="SectionTitle">Galleries</p>
+					<!---------------------------- Row 1 ---------------------------->
+					<div class="gallery">
+						<figure class="GalleryTile">
+							<a href="./Fine_Art_Gallery.html" class="GalleryTile">	
+								<img src="img/Fine_Art/PageHummingBirdsForMovieSmaller.jpg" alt="Fine Art Gallery">
+								<div class="gallerylable">
+									<figcaption>Fine Art</figcaption>
+								</div>
+							</a>
+						</figure>
+					
+						<figure class="GalleryTile">
+							<a href="./Beer_And_Sprits_Gallery.html" class="GalleryTile">
+								<img src="img/Beer_Spirits/7Seas 2011.jpg" alt="Beer And Spirits Gallery">	
+								<div class="gallerylable">
+									<figcaption class="gallerylable">Beer & Spirits</figcaption>
+								</div>
+							</a>
+						</figure>
+					
+						<figure class="GalleryTile">
+							<a href="./Wineries_Gallery.html" class="GalleryTile">
+								<img src="img/Wineries/Family_Harvest.jpg" alt="Wineries Gallery">
+								<div class="gallerylable">
+									<figcaption class="gallerylable"Wineries</figcaption>
+								</div>
+							</a>
+						</figure>
+
+						<figure class="GalleryTile">
+							<a href="./Holiday_Gallery.html" class="GalleryTile">
+								<img src="img/Holiday/FNWD_5813-175.jpg" alt="Holidays Gallery">
+								<div class="gallerylable">
+									<figcaption  class="gallerylable">Holiday</figcaption>
+								</div>
+							</a>
+						</figure class="GalleryTile">
+						<br>
+					</div>
+					<!--------------------------- /Row 1 ---------------------------->
+				
+					<!---------------------------- Row 2 ---------------------------->
+					<div class="gallery">
+						<figure class="GalleryTile">
+							<a href="./Corporate_Gallery.html" class="GalleryTile">	
+								<img src="img/Corporate/Left 4 Dead.jpg" alt="Corporate Gallery">
+								<div class="gallerylable">
+									<figcaption  class="gallerylable">Corporate</figcaption>
+								</div>
+							</a>
+						</figure>
+					
+						<figure class="GalleryTile">
+							<a href="./Charities_Gallery.html" class="GalleryTile">
+								<img src="img/Charities/Museum-Flight-far-500.jpg" alt="Charities Gallery">
+								<div class="gallerylable">
+									<figcaption  class="gallerylable">Charities</figcaption>
+								</div>
+							</a>
+						</figure>
+					
+						<figure class="GalleryTile">
+							<a href="./Schools_Gallery.html" class="GalleryTile">
+								<img src="img/Schools/FNWD_5851-500.jpg" alt="Charities Gallery">
+								<div class="gallerylable">
+									<figcaption  class="gallerylable">Schools</figcaption>
+								</div>
+							</a>
+						</figure>
+
+						<figure class="GalleryTile">
+							<a href="./Weddings_Gallery.html" class="GalleryTile">
+								<img src="img/Weddings/FNWDesign044-326.jpg" alt="Charities Gallery">
+								<div class="gallerylable">
+									<figcaption  class="gallerylable">Weddings</figcaption>
+								</div>
+							</a>
+						</figure>
+					</div>
+					<!--------------------------- /Row 2 ---------------------------->
+
+					<!---------------------------- Row 3 ---------------------------->
+					<div class="gallery">
+						<figure class="GalleryTile">
+							<a href="./Sports_Gallery.html" class="GalleryTile">	
+								<img src="img/Sports/FNWGriffey-19A-500.jpg" alt="Corporate Gallery">
+								<div class="gallerylable">
+									<figcaption  class="gallerylable">Sports</figcaption>
+								</div>
+							</a>
+						</figure>
+					
+						<figure class="GalleryTile">
+							<a href="./Celebrities_Gallery.html" class="GalleryTile">
+								<img src="img/Celebrities/fnwd-pinkpanther-500.jpg" alt="Charities Gallery">
+								<div class="gallerylable">
+									<figcaption  class="gallerylable">Celebrities</figcaption>
+								</div>
+							</a>
+						</figure>
+
+						<figure class="GalleryTile">
+							<a href="./Retail_Gallery.html" class="GalleryTile">
+								<img src="img/Retail/FNWD-TulalipResort-1019-500.jpg" alt="Charities Gallery">
+								<div class="gallerylable">
+									<figcaption  class="gallerylable">Retail</figcaption>
+								</div>
+							</a>
+						</figure>
+					</div>
+					<!--------------------------- /Row 3 ---------------------------->
+				</div>
+
+			
+				<div class="parallax_2">
+					<!-- Paralaxed Image 2 -->
+				</div>
+				
+				<!-- About Us -->	
+				<div style="border-top-style: solid; border-top-color: #8f8f8f; border-bottom-style: solid; border-bottom-color: #8f8f8f;">
+					<a class="anchor" id="About"></a>
+					<div style="margin: 10px;">
+						<p class="SectionTitle">About Fresh NorthWest Design</p>
+						<p>For over 20 years, Fresh Northwest Design is the preeminent etched, hand-painted bottle decorating studio.</p>
+	
+						<p>By utilizing techniques peerless in the industry, coupled with our staff of talented artisans, Fresh Northwest 	Design provides the highest quality service to the wine industry, charities, corporate market, and the non-profit 	sector.</p>
+
+						<p>The backbone of Fresh Northwest Design is our service-driven commitment and our absolute devotion to 	researching creative and innovative solutions and creating unrivaled artwork for our clients. We strongly believe 	that quality is the top priority.</p>
+
+						<p>Our goal is to create a product that exceeds your expectations in a timely, professional manner.</p><br>
+					</div>
+				</div>
+				<!-- /About Us -->	
+
+				<div class="parallax_3">
+					<!-- Paralaxed Image 3 -->	
+				</div>
+
+				<!-- About Process -->	
+				<div style="border-top-style: solid; border-top-color: #8f8f8f; border-bottom-style: solid; border-bottom-color: #8f8f8f;">
+					<a class="anchor" id="Etching"></a>
+					<div style="margin: 10px;">
+						<p class="SectionTitle">About Etching Process</p>
+
+						<p>Our clients are looking to add value to their brand, promotion, event, or charitable cause.  Our engraved and hand painted bottles are the perfect answer; creating a memorable work of art.</p>
+
+						<p>We can work on full or empty bottles of wine. The etching process does not pose a risk to the contents of the bottle in any way.</p>
+
+						<p>In addition, we can work on any size bottle, from the standard 750ml bottle, through and including, sizes reaching 27 liters.</p>
+
+						<p>While we specialize in wine bottles, we can also engrave and hand-paint any glass or ceramic item (awards, vases, glasses, etc.)</p>			
+					</div>
+					<a href="./Process.html" class="button_small" style="color: white">View Our Process </a> 
+				</div>
+				<!-- /About Process -->	
+
+				<div class="parallax_4">
+					<!-- Paralaxed Image 4 -->
+				</div>
+			
+				<!------------------------------------------------------ Contact Us ------------------------------------------------------>
+				<a class="anchor" id="Contact"></a>
+				<div style="border-top-style: solid; border-top-color: #8f8f8f;">
+					<p style="margin: 10px;"class="SectionTitle">Contact US</p>
+
+			
+					<div class="ContactArea">
+						<div class="ContactRow">
+							<div class="ContactColumn">
+								<p class="SmallTitle">Phone</p>
+								<a href="tel:2538575300" class="ContactText" title="Call Us">253-857-5300</a>
+								<p class="SmallTitle">Email</p>
+								<a href="mailto:Info@freshnwdesign.com" class="ContactText" title="Send us an Email">Info@freshnwdesign.com</a>
+								<p class="SmallTitle">Address</p>
+								<p class="ContactText">915 26th Avenue Northwest<br>Gig Harbor, WA, 98335<br>Suite B5<br>
+								<a href="http://www.google.com/maps/search/Fresh+Northwest+Design+915+26th+Avenue+Northwest+Gig+Harbor+WA+98335+Suite+B5" title="Get Directions"target="_blank" class="ContactText">Map & Directions</a></p>
+							</div>
+							<br>
+							<div class="ContactColumn">
+								<br>
+								<br>
+								<div>
+									<a href="https://www.facebook.com/freshnwdesign/" class="SocialText" target="_blank" title="Follow us on Facebook">
+										<span class="SocialText">Facebook</span>
+										<img src="img/Facebook_Wine.jpg" class="SocialLogo"/>
+									</a>
+								</div>
+								<br>
+								<div>
+									<a href="https://www.instagram.com/freshnorthwestdesign/" class="SocialText" target="_blank" title="Follow us on Instagram">
+  										<span class="SocialText">Instagram</span>
+  										<img src="img/Instagram_Wine.jpg" class="SocialLogo"/>
+									</a>
+								</div>
+							</div>
+							<div class="ContactColumn">
+								<br>
+								<br>
+								<a href="./Request_Quote.html#Request_Quote" class="button" style="color: white">Request Quote</a> 
+							</div>
+						</div>
+					</div>
+				</div>
+			<!------------------------------------------------------ /Contact Us ------------------------------------------------------>
+			</div>
+		</div>
+		<!------------------------------------------------------ Navbar Script ------------------------------------------------------>
+		<script type="text/javascript">
+			// When the user scrolls the page, execute mySticky
+			window.onscroll = function() {mySticky()};
+	
+			// Get the navbar
+			var navbar = document.getElementById("navbar");
+			var navname = document.getElementById("navname")
+	
+			// Get the offset position of the navbar
+			var sticky = navbar.offsetTop;
+			
+			// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function mySticky() {
+				var x = document.getElementById("myLinks");
+				x.style.display = "none";
+
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+					navname.classList.add("topname")
+				} else {
+					navbar.classList.remove("sticky");
+					navname.classList.remove("topname")
+				}
+			}
+
+
+			/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+			function myHamburger() {
+				var x = document.getElementById("myLinks");
+				if (x.style.display === "block") {
+					x.style.display = "none";
+				} else {
+				    x.style.display = "block";
+				}
+			}
+		</script>
+		<!------------------------------------------------------ /Navbar Script ------------------------------------------------------>
+	</body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Thank you</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body style="margin: 0; margin-bottom: 15px">
+		<a id="Home"></a>
+	<div style="width: 100%">
+				<div style="width: 100%; margin-left: 0%">
+					<a href="index.html" style=" width: 100px; z-index: 10 ;color:black; text-decoration:none; border-bottom-style: solid; border-bottom-color	: #8f8f8f;">
+
+						<div style=" margin-left: 25%;width: 50%; height: 300px; z-index: 10; position: absolute;"></div>
+						
+					</a>
+					<div class="logo" style="height: 320px">	
+							<p class="NameTitle"><br>Fresh<br>Northwest<br>Design</p>
+						</div>
+				</div>
+			</div>
+	<div id="navbar" class="NavText">
+  					<a href="./index.html">Home</a>
+ 					<a onclick="document.getElementById('Home').scrollIntoView(true,{behavior: 'smooth', block: 'end', inline: 'nearest'});">Top</a>
+ 					<a href="index.html#Galleries">Gallery</a>
+ 					<a href="index.html#About">About</a>
+ 					<a href="#Contact" style="border-left: solid">Contact</a>
+			</div>
+	</div>
+	<div class="content" style="margin-top: 0px">
+
+		<div style="border-top-style: solid; border-top-color: #8f8f8f; border-bottom-style: solid; border-bottom-color: #8f8f8f;">
+				<a class="anchor" name="Etching"></a>
+				<div style="margin: 10px;">
+					<p class="SectionTitle" style="margin-top: 5px; margin-bottom: 10px">Thank You!</p>
+
+					<p style="margin-top: 5px; margin-bottom: 10px">Thank you for submitting your quote request; we look forward to serving you.</p>
+
+					<p>We respond to all quote requests within 24 business hours.</p>
+
+					<p class="SmallTitle">Submitting Artwork</p>
+					<p style="margin-top: 5px; margin-bottom: 10px">Have existing artwork for your project, please <a href="mailto:Info@freshnwdesign.com">Email your artwork</a> to us for a more accurate quote.</p>
+
+					<p class="SmallTitle">Other questions?</p>
+					<p style="margin-top: 5px; margin-bottom: 10px">Please feel free to contact us if you have any questions at all.</p>			
+				</div>
+			</div>
+
+	<a name="Contact"></a>
+	<div style="margin: 0; width: 100%; overflow: hidden">
+			<p style="margin: 10px; margin-bottom: 0px"class="SectionTitle">Contact US</p>
+
+			
+			<div style="margin-left: 21%; margin-right: 10%">
+				<div class="ContactRow">
+  					<div class="ContactColumn">
+  						<p class="SmallTitle">Phone</p>
+						<a href="tel:2538575300" class="ContactText">253-857-5300</a>
+						<p class="SmallTitle">Email</p>
+						<a href="mailto:Info@freshnwdesign.com" class="ContactText">Info@freshnwdesign.com</a>
+						<p class="SmallTitle">Address</p>
+						<p class="ContactText">915 26th Avenue Northwest<br>Gig Harbor, WA, 98335<br>Suite B5<br>
+						<a href="http://www.google.com/maps/search/Fresh+Northwest+Design+915+26th+Avenue+Northwest+Gig+Harbor+WA+98335+Suite+B5" title="Get Directions"target="_blank" class="ContactText">Map & Directions</a></p>
+  					</div>
+  					<div class="ContactColumn">
+  						<br>
+  						<br>
+  						<div>
+  							<a href="https://www.facebook.com/freshnwdesign/" class="SocialText" target="_blank" title="Follow us on Facebook">
+  								<span class="SocialText">Facebook</span>
+  								<img src="img/Facebook_Wine.jpg" class="SocialLogo"/>
+  							</a>
+  						</div>
+  						<br>
+  						<div>
+  							<a href="https://www.instagram.com/freshnorthwestdesign/" class="SocialText" target="_blank" title="Follow us on Instagram">
+  								<span class="SocialText">Instagram</span>
+  								<img src="img/Instagram_Wine.jpg" class="SocialLogo"/>
+  							</a>
+  						</div>
+  					</div>
+  					<div class="ContactColumn">
+  						<br>
+  						<br>
+  						<a href="/Request_Quote.html#Request_Quote" onclick="toggle_visibility('hide');" class="button" style="color: white">Request Quote</a> 
+  					</div>
+				</div>
+        <script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'none')
+          e.style.display = 'block';
+    }
+//-->
+</script>
+       
+</div>
+</div>
+<!------------------------------------------------------ Navbar Script ------------------------------------------------------>
+		<script type="text/javascript">
+				// When the user scrolls the page, execute myFunction
+				window.onscroll = function() {myFunction()};
+	
+				// Get the navbar
+				var navbar = document.getElementById("navbar");
+	
+				// Get the offset position of the navbar
+				var sticky = navbar.offsetTop;
+				
+				// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+				function myFunction() {
+					if (window.pageYOffset >= sticky) {
+						navbar.classList.add("sticky")
+					} else {
+						navbar.classList.remove("sticky");
+					}
+				}
+			</script>
+			<!------------------------------------------------------ /Navbar Script ------------------------------------------------------>
+</body>
+</html>

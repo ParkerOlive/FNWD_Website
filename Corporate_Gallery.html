@@ -1,0 +1,274 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Corporate</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css/lightbox.css" />
+		<script src="js/lightbox-plus-jquery.js"></script>
+		<script>
+    		lightbox.option({
+    	  	'fitImagesInViewport': false;
+    		})
+		</script>
+	</head>
+	<body style="margin: 0px;">
+		<a id="Home"></a>
+		<div style="width: 100%">
+				<div style="width: 100%; margin-left: 0%">
+					<a href="index.html" style=" width: 100px; z-index: 10 ;color:black; text-decoration:none; border-bottom-style: solid; border-bottom-color	: #8f8f8f;">
+
+						<div style=" margin-left: 25%;width: 50%; height: 300px; z-index: 10; position: absolute;"></div>
+						
+					</a>
+					<div class="logo">	
+							<p class="NameTitle"><br>Fresh<br>Northwest<br>Design</p>
+						</div>
+				</div>
+			</div>
+		<!-- Sticky Navbar -->
+			<div id="navbar" class="NavText">
+					<a href="./index.html">Home</a>
+  					<a onclick="document.getElementById('Home').scrollIntoView(true,{behavior: 'smooth', block: 'end', inline: 'nearest'});">Top</a>
+  					<a href="index.html#Galleries">Gallery</a>
+ 					<a href="index.html#About">About</a>
+  					<a href="Request_Quote.html">Contact</a>
+			</div>
+			<!-- /Sticky Navbar -->
+		<div class="content" style="border-top-style: solid; border-top-color: #8f8f8f; border-bottom-style: solid; border-bottom-color: #8f8f8f; width:99.9%">
+			<div class="container" style="margin: 0px">
+				<p class="SectionTitle" style="widht: 90%">Custom Engraved Bottles for Corporations</p>
+				<div style="margin: 15px">
+					<p>	
+						Custom etched wine bottles are a creative, unique way to put your company logo or brand on an unforgettable gift.
+					</p>
+					<p>
+						While we specialize in wine bottles, we can custom engrave any glass or ceramic item (ornaments, vases, bowls, art glass, etc.).  In addition, we can work on any size bottle, from the standard 750ml bottle through sizes reaching 27 liters.
+					</p>
+					<a href="./Request_Quote.html#Request_Quote" class="button_small" style="color: white">Request Quote</a> 
+				</div>
+			</div>
+		</div>
+		<div class="GalleryBackground">
+		<div class="row">
+			<div class="column" id="column_1">
+				<!-- Image Column 1 (Gets filled by javasctipt) -->
+			</div>
+			<div class="column" id="column_2">
+				<!-- Image Column 2 (Gets filled by javasctipt) -->
+			</div>
+			<div class="column" id="column_3">
+				<!-- Image Column 3 (Gets filled by javasctipt) -->
+			</div>
+			<div class="column" id="column_4">
+				<!-- Image Column 4 (Gets filled by javasctipt) -->
+			</div>
+		</div>
+		<!-- Column 1 -->
+		<script src="js/Gallery_Column.js"></script>
+		<script>
+			/*====================================== Create Image Items ======================================*/
+			//Images For Column 1
+			var column_1_array = [];
+			//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+			column_1_array.push({file:"img/Corporate/AM-Seafood-500.jpg"		, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/BT-500.jpg"				, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/Cooper-Lybrand-500.jpg"	, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/Daedalus-500.jpg"			, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/EA-500-010610.jpg"			, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-002-326.jpg"			, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-004-010510-500.jpg"	, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-004-500-010610.jpg"	, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-005-010510-500.jpg"	, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-010-010510-500.jpg"	, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-022-010510-500.jpg"	, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/fnwd-036-500.jpg"			, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/fnwd-042-500.jpg"			, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-045-010510-500.jpg"	, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-064-326.jpg"			, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-065-010410-500.jpg"	, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-075-010410-500.jpg"	, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-079-010410-500.jpg"	, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-079-326.jpg"			, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-086-517-500.jpg"		, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-089-010410-500.jpg"	, disc:"My Caption 1"});
+			column_1_array.push({file:"img/Corporate/FNWD-092-326.jpg"			, disc:"My Caption 1"});
+
+			//Images For Column 2
+			var column_2_array = [];
+			//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+			column_2_array.push({file:"img/Corporate/FNWD-10-517-500.jpg"					, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/FNWD-105-326.jpg"						, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/FNWD-106-326.jpg"						, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/fnwd-116-500.jpg"						, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/fnwd-37B-500.jpg"						, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/fnwd-41-500.jpg"						, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/fnwd-albertsonsanchor-500.jpg"			, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/fnwd-albertsonsgig-500.jpg"			, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/fnwd-artstable-500.jpg"				, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/fnwd-ConoverMardiGras-3-11-500.jpg"	, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/fnwd-copperstone-500.jpg"				, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/fnwd-Cytec-3-2011-500.jpg"				, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/fnwd-isilon-500.jpg"					, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/fnwd-lombardis-500.jpg"				, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/FNWD-NWContainer-1019-500.jpg"			, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/fnwd-realm-500.jpg"					, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/fnwd-rescom-500.jpg"					, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/FNWD-Tom&Eddies-721-500.jpg"			, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/FNWD-Toyota2010-721-500.jpg"			, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/FNWD-TulalipResort-1019-500.jpg"		, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/FNWDesign-169-326.jpg"					, disc:"My Caption 2"});
+			column_2_array.push({file:"img/Corporate/FNWDRaw-A20-500.jpg"					, disc:"My Caption 2"});
+
+			//Images For Column 3
+			var column_3_array = [];
+			//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+			column_3_array.push({file:"img/Corporate/FNWDRaw-A24-500.jpg"		, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FNWDRaw-A30-500.jpg"		, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FNWDRawA116-500.jpg"		, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FNWDRawA142-500.jpg"		, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FNWDRawA146-500.jpg"		, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FNWDRawA66-500.jpg"		, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FNWD_5813-500.jpg"			, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FNWD_5822-500.jpg"			, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FNWD_5836-500.jpg"			, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FNWD_5860-500.jpg"			, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FNWD_5883-500.jpg"			, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FNWD_5898-500.jpg"			, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FNWD_5909-500.jpg"			, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FNWD_5965-500.jpg"			, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FRESHNWD-045-500.jpg"		, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FRESHNWD-046-500.jpg"		, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FRESHNWD-055-500.jpg"		, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FRESHNWD-056-500.jpg"		, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FRESHNWD-106-500.jpg"		, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FreshNWD2008-025-500.jpg"	, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FreshNWD2008-034-500.jpg"	, disc:"My Caption 3"});
+			column_3_array.push({file:"img/Corporate/FreshNWD2008-038-500.jpg"	, disc:"My Caption 3"});
+
+			//Images For Column 4
+			var column_4_array = [];
+			//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+			column_4_array.push({file:"img/Corporate/FreshNWD2008-055-500.jpg"			, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/FreshNWD2008-064-500.jpg"			, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/FreshNWD2008-082-500.jpg"			, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/FreshNWD2008-088-500.jpg"			, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/FreshNWD2008-201-500.jpg"			, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/FreshNWD2008-248-500.jpg"			, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/FreshNWD35B-500.jpg"				, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/FreshNWD7B-500.jpg"				, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/Harley-500.jpg"					, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/InterS-flag-500.jpg"				, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/InterS-Sled-500.jpg"				, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/InterS-Truck-500.jpg"				, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/Inters-Truck-back-500.jpg"			, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/Inters-Truck-wreath-500.jpg"		, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/Keyport-Foods-500.jpg"				, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/Left 4 Dead.jpg"					, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/MSN-500.jpg"						, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/pina_large.jpg"					, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/RealNetworks-500.jpg"				, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/Skanska-500.jpg"					, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/Urban-Influence-2010-BACK-500.jpg"	, disc:"My Caption 4"});
+			column_4_array.push({file:"img/Corporate/Water-Bridge-500.jpg"				, disc:"My Caption 4"});
+			/*====================================== /Create Image Items ======================================*/
+
+
+
+
+
+
+
+
+
+
+
+			/*====================================== Create HTML Code ======================================*/
+			//Put HTML into Elements of ID
+			document.getElementById("column_1").innerHTML = CreateColumn(column_1_array);
+			document.getElementById("column_2").innerHTML = CreateColumn(column_2_array);
+			document.getElementById("column_3").innerHTML = CreateColumn(column_3_array);
+			document.getElementById("column_4").innerHTML = CreateColumn(column_4_array);
+
+			/*====================================== /Create HTML Code ======================================*/
+
+		</script>
+
+		<script>
+			var elements = document.getElementsByClassName("column");
+
+			// Declare a "loop" variable
+			var i;
+
+			for (i = 0; i < elements.length; i++) {
+				elements[i].style.flex = "5%";
+			}
+		</script>
+		</div>
+			<!------------------------------------------------------ Contact Us ------------------------------------------------------>
+			<a class="anchor" name="Contact"></a>
+			<div style="border-top-style: solid; border-top-color: #8f8f8f;">
+			<p style="margin: 10px;"class="SectionTitle">Contact US</p>
+
+			
+			<div class="ContactArea">
+				<div class="ContactRow">
+  					<div class="ContactColumn">
+  						<p class="SmallTitle">Phone</p>
+						<a href="tel:2538575300" class="ContactText" title="Call Us">253-857-5300</a>
+						<p class="SmallTitle">Email</p>
+						<a href="mailto:Info@freshnwdesign.com" class="ContactText" title="Send us an Email">Info@freshnwdesign.com</a>
+						<p class="SmallTitle">Address</p>
+						<p class="ContactText">915 26th Avenue Northwest<br>Gig Harbor, WA, 98335<br>Suite B5<br>
+						<a href="http://www.google.com/maps/search/Fresh+Northwest+Design+915+26th+Avenue+Northwest+Gig+Harbor+WA+98335+Suite+B5" title="Get Directions"target="_blank" class="ContactText">Map & Directions</a></p>
+  					</div>
+  					<div class="ContactColumn">
+  						<br>
+  						<br>
+  						<div>
+  							<a href="https://www.facebook.com/freshnwdesign/" class="SocialText" target="_blank" title="Follow us on Facebook">
+  								<span class="SocialText">Facebook</span>
+  								<img src="img/Facebook_Wine.jpg" class="SocialLogo"/>
+  							</a>
+  						</div>
+  						<br>
+  						<div>
+  							<a href="https://www.instagram.com/freshnorthwestdesign/" class="SocialText" target="_blank" title="Follow us on Instagram">
+  								<span class="SocialText">Instagram</span>
+  								<img src="img/Instagram_Wine.jpg" class="SocialLogo"/>
+  							</a>
+  						</div>
+  					</div>
+  					<div class="ContactColumn">
+  						<br>
+  						<br>
+  						<a href="./Request_Quote.html#Request_Quote" class="button" style="color: white">Request Quote</a> 
+  					</div>
+
+				</div>
+				
+			</div>
+			</div>
+			<!------------------------------------------------------ /Contact Us ------------------------------------------------------>
+			<!------------------------------------------------------ Navbar Script ------------------------------------------------------>
+		<script type="text/javascript">
+				// When the user scrolls the page, execute myFunction
+				window.onscroll = function() {myFunction()};
+	
+				// Get the navbar
+				var navbar = document.getElementById("navbar");
+	
+				// Get the offset position of the navbar
+				var sticky = navbar.offsetTop;
+				
+				// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+				function myFunction() {
+					if (window.pageYOffset >= sticky) {
+						navbar.classList.add("sticky")
+					} else {
+						navbar.classList.remove("sticky");
+					}
+				}
+			</script>
+			<!------------------------------------------------------ /Navbar Script ------------------------------------------------------>
+	</body>
+</html>

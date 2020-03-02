@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Charities</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css/lightbox.css" />
+		<script src="js/lightbox-plus-jquery.js"></script>
+		<script>
+    		lightbox.option({
+    	  	'fitImagesInViewport': false;
+    		})
+		</script>
+	</head>
+	<body style="margin: 0">
+		<a id="Home"></a>
+		<!-- Logo and Title -->
+		<div style="width: 100%">
+			<div style="width: 50%; margin-left: 25%">
+				<a href="index.html" style="color:black; text-decoration:none; border-bottom-style: solid; border-bottom-color	: #8f8f8f;">
+					<div class="logo">	
+						<p class="NameTitle"><br>Fresh<br>Northwest<br>Design</p>
+					</div>
+					
+				</a>
+			</div>
+		</div>
+		<!-- /Logo and Title -->
+		
+		<!-- Sticky Navbar -->
+		<div id="navbar" style="font-size: 24px">
+				<a href="./index.html">Home</a>
+  				<a onclick="document.getElementById('Home').scrollIntoView(true,{behavior: 'smooth', block: 'end', inline: 'nearest'});">Top</a>
+  				<a href="index.html#Galleries">Gallery</a>
+ 				<a href="index.html#About">About</a>
+  				<a href="Request_Quote.html">Contact</a>
+		</div>
+		<!-- /Sticky Navbar -->
+		
+		<!-- Gallery Description -->
+		<div class="content" style="border-top-style: solid; border-top-color: #8f8f8f; border-bottom-style: solid; border-bottom-color: #8f8f8f; width:99.5%">
+			<div class="container" style="margin: 5px">
+				<p class="SectionTitle">Custom Etched Bottles for Charities & Charity Events</p>
+				<div style="margin: 15px">
+					<p>	
+						Custom etched wine bottles are the perfect idea for a charitable event, auction, or special event.<br>
+						There are seemingly endless ways to creatively promote or commemorate your event.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="GalleryBackground">
+			<div class="row">
+				<div class="column" id="column_1">
+					<!-- Image Column 1 (Gets filled by javasctipt) -->
+				</div>
+				<div class="column" id="column_2">
+					<!-- Image Column 2 (Gets filled by javasctipt) -->
+				</div>
+				<div class="column" id="column_3">
+					<!-- Image Column 3 (Gets filled by javasctipt) -->
+				</div>
+				<div class="column" id="column_4">
+					<!-- Image Column 4 (Gets filled by javasctipt) -->
+				</div>
+				<div class="column" id="column_5">
+					<!-- Image Column 5 (Gets filled by javasctipt) -->
+				</div>
+			</div>
+			<!-- Column 1 -->
+			<script src="js/Gallery_Column.js"></script>
+			<script>
+				/*====================================== Create Image Items ======================================*/
+				//Images For Column 1
+				var column_1_array = [];
+				//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+				column_1_array.push({file:"img/Charities/fnwd-NativityHouse-3-2011-500.jpg",		disc:"Nativity House 1.5L etched and hand painted wine bottles"});
+				column_1_array.push({file:"img/Charities/fnwd-014-500.jpg",							disc:"Four 3.0Ls &#40;double magnums&#41; of Erath for the Salud Pinot Noir Wine Auction.  All wine bottles are etched &amp; hand painted based on photo images by the acclaimed Janis Miglavs."});
+				column_1_array.push({file:"img/Charities/fnwd-artequalsjustice-500.jpg",			disc:"1.5L engraved &amp; hand painted wine bottle for Art Equals Justice"});
+				column_1_array.push({file:"img/Charities/fnwd-019-500.jpg",							disc:"Northwest Sinfonietta's Double Magnum &ndash; completely etched and painted 3.0L wine bottle using sculptor Doug Granum's original artwork as inspiration."});
+				column_1_array.push({file:"img/Charities/fnwd-029-500.jpg",							disc:"Tacoma Regional Convention &amp; Visitor's Bureau 3.0L etched and hand-painted wine bottles"});
+				column_1_array.push({file:"img/Charities/fnwd-65-500.jpg",							disc:"NASA Shuttle mission 133 5.0L etched &amp; hand painted wine bottles"});
+				column_1_array.push({file:"img/Charities/FNWDcommercial-002-1019-500.jpg",			disc:"Black Cat Ball 1.5L etched and hand-painted wine bottle"});
+				column_1_array.push({file:"img/Charities/FNWD-Children'sHospPSC-1019-500.jpg",		disc:"Children's PSC 750ml etched and hand-painted wine bottle"});
+				column_1_array.push({file:"img/Charities/FNWDcommercial-003-1019-500.jpg",			disc:"Pasado's Safe Haven 1.5L etched and hand-painted wine bottle"});
+				column_1_array.push({file:"img/Charities/FNWD-CWA2010-721-500.jpg",					disc:"Classic Wines Auction 3.0L etched and hand painted wine bottle"});
+				column_1_array.push({file:"img/Charities/AWW-2010-500.jpg",							disc:"Auction of Washington Wines 1.5L etched &amp; hand-painted commemorative wine bottle"});
+				column_1_array.push({file:"img/Charities/FNWD-CWAMiniVini2010-721-500.jpg",			disc:"Classic Wines Auction 1.5L, gold leafed, etched and hand-painted wine bottles"});
+				column_1_array.push({file:"img/Charities/FNWD-IndigoGirls-721-500.jpg",				disc:"3.0L for the Indigo Girls, etched and hand-painted wine bottle"});
+				column_1_array.push({file:"img/Charities/FNWD-LeMay-721-500.jpg",					disc:"Two 3.0Ls of rare vehicles from the LeMay collection for the Washington Wines Festival. Both etched and hand painted."});
+				column_1_array.push({file:"img/Charities/FNWD-Detlef2010-721-500.jpg",				disc:"Detlef Schrempf Foundation 1.5L engraved &amp; hand painted wine bottle"});
+				column_1_array.push({file:"img/Charities/FNWD-SheridanWilkensFront-721-500.jpg",	disc:"Lenny Wilkens Foundation 3.0L etched and hand-painted wine bottle"});
+				column_1_array.push({file:"img/Charities/fnwd66CD-326.jpg",							disc:"JDRF 750ml Dream Drawing engraved and hand painted wine bottle"});
+	
+	
+				//Images For Column 2
+				var column_2_array = [];
+				//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+				column_2_array.push({file:"img/Charities/FNWD-LeukemiaSuperHero-721-500.jpg",		disc:"Leukemia &amp; Lymphoma Society 3.0L etched and hand painted wine bottle"});
+				column_2_array.push({file:"img/Charities/FNWD-LeMayGroundbreaking-721-500.jpg",		disc:"LeMay Museum's ground breaking 1.5L etched and hand painted wine bottles"});
+				column_2_array.push({file:"img/Charities/FNWD-NWCC-Comm2010-721-500.jpg",			disc:"Northwest Corks &amp; Crush Commemorative 1.5L engraved &amp; hand-painted wine bottle"});
+				column_2_array.push({file:"img/Charities/FNWD-Splash2010-721-500.jpg",				disc:"Seattle Aquarium SPLASH 1.5L engraved and hand painted wine bottle"});
+				column_2_array.push({file:"img/Charities/FNWD-WWFComm2009-721-500.jpg",				disc:"Washington Wines Festival Commemorative 1.5L engraved &amp; hand painted wine bottle"});
+				column_2_array.push({file:"img/Charities/FNWD-WWFComm2010-721-500.jpg",				disc:"Washington Wines Festival Commemorative 1.5L engraved &amp; hand painted wine bottles"});
+				column_2_array.push({file:"img/Charities/FNWD-DashRace-721-500.jpg",				disc:"Make the Dash Count &ldquo;Race for the Kids&rdquo; Award etched and hand painted 3L"});
+				column_2_array.push({file:"img/Charities/FNWD-StarryNight-721-500.jpg",				disc:"Auction of Washington Wines 1.5L Commemorative etched and hand painted wine bottle"});
+				column_2_array.push({file:"img/Charities/fnwd33FCD-326.jpg",						disc:"Broadway Center for the Arts gift for kd lang, 3.0L etched and hand painted wine bottle"});
+				column_2_array.push({file:"img/Charities/FNWD-032-010410-500.jpg",					disc:"Seattle Symphony Silver Anniversary 1.5L commemorative etched and hand painted wine bottle"});
+				column_2_array.push({file:"img/Charities/FNWD-052-010410-500.jpg",					disc:"Lyle Lovett/John Hiatt 3.0L etched and hand painted wine bottle"});
+				column_2_array.push({file:"img/Charities/FNWD-013-010410-500.jpg",					disc:"Edmonds Center for the Arts 3rd Annual Arts Crush 1.5L commemorative etched and hand painted wine bottle"});
+				column_2_array.push({file:"img/Charities/FNWD-099-517-500.jpg",						disc:"JDRF 750ml etched &amp; hand-painted wine bottle"});
+				column_2_array.push({file:"img/Charities/FNWD-005-517-500.jpg",						disc:"Tacoma Wine Classic 2010 Etched &amp; hand-painted commemorative 1.5L wine bottle"});
+				column_2_array.push({file:"img/Charities/FNWD-011-517-500.jpg",						disc:"Star Chefs 3.0L etched &amp; hand painted wine bottle"});
+				column_2_array.push({file:"img/Charities/FNWDesign-209-326.jpg",					disc:"Steven&#8217;s Foundation 1.5L etched and hand painted wine bottle"});
+							
+				//Images For Column 3
+				var column_3_array = [];
+				//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+				column_3_array.push({file:"img/Charities/fnwd-011-326.jpg",							disc:"Tacoma Rotary #8 engraved and hand painted 3.0L wine bottle"});
+				column_3_array.push({file:"img/Charities/fnwd-13Email-326.jpg",						disc:"Three Dollar Cinema 1.5L engraved and hand painted wine bottle"});
+				column_3_array.push({file:"img/Charities/FNWD052-326.jpg",						disc:"Auction of Washington Wines 1.5L etched and hand painted wine bottle commemorative."});
+				column_3_array.push({file:"img/Charities/fnwd-055-500.jpg",							disc:"Washington Wine Country 1.5L etched and hand painted commemorative wine bottle with photo canvas transfer"});
+				column_3_array.push({file:"img/Charities/fnwd-082-500.jpg",							disc:"Tacoma Wine Classic 1.5L etched and hand-painted commemorative wine bottle"});
+				column_3_array.push({file:"img/Charities/fnwd-070-500.jpg",							disc:"Seattle Mens &amp; Women&rsquo;s chorus 1.5L etched &amp; hand painted wine bottle"});
+				column_3_array.push({file:"img/Charities/FRESHNWD-110-500.jpg",						disc:"Vashon Allied Arts 6.0L engraved & hand painted wine bottle"});
+				column_3_array.push({file:"img/Charities/FNWD067-326.jpg",						disc:"A Night Out (Prosser Memorial Hospital) 1.5L etched and hand painted wine bottle commemorative."});
+				column_3_array.push({file:"img/Charities/fnwd-1-326.jpg",							disc:"Taste Reno Tahoe 750ml etched &amp; hand painted wine bottle"});
+				column_3_array.push({file:"img/Charities/fnwd-2-326.jpg",							disc:"Rainbow Center of Tacoma 1.5L engraved &amp; hand painted wine bottle"});
+				column_3_array.push({file:"img/Charities/fnwd-29-326.jpg",							disc:"Leukemia & Lymphoma Societys Celebrity Waiters 3L etched and hand painted wine bottle."});
+				column_3_array.push({file:"img/Charities/fnwdredo-4-326.jpg",						disc:"Classic Wines Auction Vini Award 1.5L etched and hand painted wine bottle"});
+				column_3_array.push({file:"img/Charities/FNWDesign-149-326.jpg",					disc:"Zoobilee 1.5L etched and hand painted wine bottle"});
+				column_3_array.push({file:"img/Charities/FNWDesign-153-326.jpg",					disc:"Washington Wine Festival 1.5L etched &amp; hand painted commemorative wine bottle"});
+				column_3_array.push({file:"img/Charities/FNWDesign-191-326.jpg",					disc:"Seattle Aquarium&amp;rsqo;s SPLASH 1.5L engraved and hand painted commemorative wine bottle"});
+				column_3_array.push({file:"img/Charities/FNWDRawA41-500.jpg",						disc:"Dugan Foundation 1.5L engraved &amp; hand painted wine bottle"});
+				
+				//Images For Column 4
+				var column_4_array = [];
+				//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+				column_4_array.push({file:"img/Charities/FNWDRawA84-500.jpg",						disc:"Off the Vine 1.5L commemorative engraved &amp; hand painted wine bottle"});
+				column_4_array.push({file:"img/Charities/FNWDRawBA2-500.jpg",						disc:"Seattle Men's &amp; Women's Chorus Commemorative 1.5L engraved &amp; hand painted wine bottle"});
+				column_4_array.push({file:"img/Charities/AWW-06-500.jpg",							disc:"Auction of Washington Wines 1.5 liter etched &amp; hand painted wine bottle"});
+				column_4_array.push({file:"img/Charities/FNWD_SunValleyFallsTradition-500.jpg",		disc:"2006 Sun Valley Wine Auction Fall&#8217;s Tradition: Series of seven 6.0L bottles of original artwork; hammer price: $72,000"});
+				column_4_array.push({file:"img/Charities/AWW-clowns-500.jpg",						disc:"Auction of Washington Wines 6.0 liter etched &amp; hand painted wine bottle"});
+				column_4_array.push({file:"img/Charities/FNWD_5957-500.jpg",						disc:"Seattle Aquarium's SPLASH 9.0L etched &amp; hand painted wine bottle"});
+				column_4_array.push({file:"img/Charities/FNWDRaw-A15-500.jpg",						disc:"Moyer Foundation's Dreamcatcher's Ball 750ml engraved &amp; hand painted wine bottle"});
+				column_4_array.push({file:"img/Charities/Classic-wines-04-500.jpg",					disc:"Classic Wines Auction 1.5 liter etched &amp; hand painted wine bottle"});
+				column_4_array.push({file:"img/Charities/FNWDRawA99-500.jpg",						disc:"Whiskers &amp; Wine 1.5L Commemorative engraved &amp; hand painted wine bottle"});
+				column_4_array.push({file:"img/Charities/Museum-Flight-far-500.jpg",				disc:"Museum of Flight 6.0 liter gold leaf, etched, hand painted &amp; photo canvas transfer wine bottle"});
+				column_4_array.push({file:"img/Charities/FNWD_SunValleyTheBigHitchSmaller-500.jpg",	disc:"2007 Sun Valley Wine Auction The Big Hitch: Series of seven 6.0L bottles of original artwork; hammer price: $60,000"});
+				column_4_array.push({file:"img/Charities/St-Josephs-500.jpg",						disc:"St. Joseph's School Auction 1.5 liter etched &amp; hand painted wine bottle"});
+				column_4_array.push({file:"img/Charities/Oregon-500.jpg",							disc:"Classic Wines Auction 5.0 liter etched &amp; hand painted wine bottle"});
+				column_4_array.push({file:"img/Charities/FNWD_5843-500.jpg",						disc:"Museum of Flight X-15 1.5L etched &amp; hand painted wine bottle"});
+				column_4_array.push({file:"img/Charities/FNWD_5855-500.jpg",						disc:"Great Plains Zoo Commemorative 1.5L etched &amp; hand painted wine bottle"});
+				column_4_array.push({file:"img/Charities/Sun-Valley-Salmon-btl-500.jpg",			disc:"Sun Valley Wine Auction 1.5 liter etched &amp; hand painted wine bottle"});
+				column_4_array.push({file:"img/Charities/FNWD-MuseumOfFlight2010-721-500.jpg",		disc:"Museum of Flight's 750ml etched &amp; hand painted wine bottle"});
+	
+	
+				//Images For Column 5
+				var column_5_array = [];
+				//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+				column_5_array.push({file:"img/Charities/AuctionofNWwines-500.jpg",					disc:"Auction of NW Wines commemorative 1.5 liter etched &amp; hand painted wine bottle"});
+				column_5_array.push({file:"img/Charities/RonMcDonHouse-500.jpg",					disc:"Los Angeles Ronald McDonald House 5.0 liter etched &amp; hand painted wine bottle"});
+				column_5_array.push({file:"img/Charities/WA-Wines-Fest-500.jpg",					disc:"Washington Wines Festival commemorative 1.5 liter etched &amp; hand painted wine bottle"});
+				column_5_array.push({file:"img/Charities/FNWD_5809-500.jpg",						disc:"Northwest Corks &amp; Crush Commemorative 1.5L etched &amp; hand painted wine bottle"});
+				column_5_array.push({file:"img/Charities/Classic-Wines-Auction-500.jpg",			disc:"Classic Wines Auction commemorative 1.5 liter etched &amp; hand painted wine bottle"});
+				column_5_array.push({file:"img/Charities/Museum-Flight-patch-500.jpg",				disc:"Museum of Flight 1.5 liter etched, hand painted &amp; patch attached wine bottle"});
+				column_5_array.push({file:"img/Charities/FNWD_5838-500.jpg",						disc:"Hutchinson Holiday Gala Commemorative 750ml etched &amp; hand painted wine bottle"});
+				column_5_array.push({file:"img/Charities/FNWD_5873-500.jpg",						disc:"Taste Washington! 1.5L Commemorative etched &amp; hand painted wine bottle"});
+				column_5_array.push({file:"img/Charities/FNWD_5875-500.jpg",						disc:"Washington Wines Festival 1.5L with Photo Canvas Transfer of original artwork, etched &amp; hand painted wine bottle"});
+				column_5_array.push({file:"img/Charities/Raptor-cent-500.jpg",						disc:"Alaska Raptor Center 1.5 liter etched &amp; hand painted wine bottle"});
+				column_5_array.push({file:"img/Charities/FNWD_IMG_6676-500.jpg",					disc:"Six etched and hand painted 3.0 liters with original artwork recreations (signed by winemakers) for art auction"});
+				column_5_array.push({file:"img/Charities/FreshNWD18B-500.jpg",						disc:"Cattle Baron's Ball 1.5 liter etched &amp; hand painted wine bottle"});
+				column_5_array.push({file:"img/Charities/FreshNWD2008-029-500.jpg",					disc:"Juvenile Diabetes Research Foundation &quot;On the Greens&quot; 750ml engraved &amp; hand painted wine bottle"});
+				column_5_array.push({file:"img/Charities/FreshNWD2008-077-500.jpg",					disc:"PONCHO Wine Auction Commemorative 1.5L engraved &amp; hand painted wine bottles"});
+				column_5_array.push({file:"img/Charities/FreshNWD2008-110-500.jpg",					disc:"Mr. Boeing's Model 40B 1.5L engraved &amp;hand painted wine bottle"});
+				column_5_array.push({file:"img/Charities/FreshNWD20084B-500.jpg",					disc:"Central Coast Wine Classic 350ml engraved &amp; hand painted wine bottle"});
+				column_5_array.push({file:"img/Charities/FNWD-104-326.jpg",							disc:"Dugan Foundation&rsquo;s Fur Ball 3.0L Commemorative wine bottle, etched and hand painted"});
+	
+				/*====================================== /Create Image Items ======================================*/
+	
+				/*====================================== Create HTML Code ======================================*/
+				//Put HTML into Elements of ID
+				document.getElementById("column_1").innerHTML = CreateColumn(column_1_array);
+				document.getElementById("column_2").innerHTML = CreateColumn(column_2_array);
+				document.getElementById("column_3").innerHTML = CreateColumn(column_3_array);
+				document.getElementById("column_4").innerHTML = CreateColumn(column_4_array);
+				document.getElementById("column_5").innerHTML = CreateColumn(column_5_array);
+	
+				/*====================================== /Create HTML Code ======================================*/
+	
+			</script>
+	
+			<script>
+				var elements = document.getElementsByClassName("column");
+	
+				// Declare a "loop" variable
+				var i;
+	
+				for (i = 0; i < elements.length; i++) {
+					elements[i].style.flex = "5%";
+				}
+			</script>
+		</div>
+			<!------------------------------------------------------ Contact Us ------------------------------------------------------>
+			<a class="anchor" name="Contact"></a>
+			<div style="border-top-style: solid; border-top-color: #8f8f8f;">
+			<p style="margin: 10px;"class="SectionTitle">Contact US</p>
+
+			
+			<div class="ContactArea">
+				<div class="ContactRow">
+  					<div class="ContactColumn">
+  						<p class="SmallTitle">Phone</p>
+						<a href="tel:2538575300" class="ContactText" title="Call Us">253-857-5300</a>
+						<p class="SmallTitle">Email</p>
+						<a href="mailto:Info@freshnwdesign.com" class="ContactText" title="Send us an Email">Info@freshnwdesign.com</a>
+						<p class="SmallTitle">Address</p>
+						<p class="ContactText">915 26th Avenue Northwest<br>Gig Harbor, WA, 98335<br>Suite B5<br>
+						<a href="http://www.google.com/maps/search/Fresh+Northwest+Design+915+26th+Avenue+Northwest+Gig+Harbor+WA+98335+Suite+B5" title="Get Directions"target="_blank" class="ContactText">Map & Directions</a></p>
+  					</div>
+  					<div class="ContactColumn">
+  						<br>
+  						<br>
+  						<div>
+  							<a href="https://www.facebook.com/freshnwdesign/" class="SocialText" target="_blank" title="Follow us on Facebook">
+  								<span class="SocialText">Facebook</span>
+  								<img src="img/Facebook_Wine.jpg" class="SocialLogo"/>
+  							</a>
+  						</div>
+  						<br>
+  						<div>
+  							<a href="https://www.instagram.com/freshnorthwestdesign/" class="SocialText" target="_blank" title="Follow us on Instagram">
+  								<span class="SocialText">Instagram</span>
+  								<img src="img/Instagram_Wine.jpg" class="SocialLogo"/>
+  							</a>
+  						</div>
+  					</div>
+  					<div class="ContactColumn">
+  						<br>
+  						<br>
+  						<a href="./Request_Quote.html#Request_Quote" class="button" style="color: white">Request Quote</a> 
+  					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!------------------------------------------------------ /Contact Us ------------------------------------------------------>
+		
+		<!------------------------------------------------------ Navbar Script ------------------------------------------------------>
+		<script type="text/javascript">
+			// When the user scrolls the page, execute myFunction
+			window.onscroll = function() {myFunction()};
+	
+			// Get the navbar
+			var navbar = document.getElementById("navbar");
+	
+			// Get the offset position of the navbar
+			var sticky = navbar.offsetTop;
+				
+			// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+		<!------------------------------------------------------ /Navbar Script ------------------------------------------------------>
+	</body>
+</html>

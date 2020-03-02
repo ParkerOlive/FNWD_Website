@@ -1,0 +1,215 @@
+@font-face { font-family: Trend_Slab; src: url('Latinotype - TrendSlabFour.otf'); } 
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container{
+	width: 100%;
+	margin: 0px;
+	background: #ffffff;
+	font-size: 24px;
+	overflow: hidden;
+}
+.parallax_1{
+	background: url('img/Fine_Art/TAM_Front.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}
+.parallax_2{
+	background: url('img/Fine_Art/FNWDChristmasSet.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}
+.parallax_3{
+	background: url('img/Fine_Art/FNWDChristmasSetBacks.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}
+.NameTitle { 
+	font-family: Trend_Slab; 
+	font-size: 40px;
+	margin-right: 57%;
+	margin-left: 43%;
+}
+.logo {
+	background: url('img/logo_No_Words.jpg') no-repeat center;
+	background-size: 500px 400px;
+	margin-right: 0%;
+	margin-left: 0%;
+	margin-top: 0px;
+	height: 300px;
+	overflow: hidden;
+	
+}
+.SectionTitle { 
+	font-family: Trend_Slab; 
+	font-size: 36px;
+}
+
+.SmallTitle { 
+	font-size: 28px;
+	margin-bottom: 0px;
+}
+
+.ContactText {
+	font-size: 18px;
+	margin-top: 0px;
+}
+
+
+.gallery{
+  display: flex;
+}
+
+figure{
+  width: 200px;
+}
+figure img{
+  width: 100%;
+}
+figure figcaption{
+  text-align: center;
+}
+
+/*=============== Contact Us ===============*/
+.ContactColumn {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.ContactRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.SocialLogo{
+	height: 60px; 
+	width: 60px; 
+	vertical-align: middle;  
+	margin-right: 20%
+}
+.SocialText{
+	text-decoration: none;
+	text-align: right;
+	margin-right: 0%;
+	vertical-align: middle;
+}
+.button {
+  background-color: #9f003f;
+  border: solid;
+  border-width: 8px;
+  border-color: #8a002a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.GalleryTile{
+	text-decoration:none;
+
+}
+.GalleryTile:hover{
+	background-color: #eeeeee;
+}
+
+.button:hover{
+	background-color: #8a002a;
+	border-color: #9f003f;
+	color: white;
+	text-decoration: none;
+}
+.button:active{
+	background-color: #6a000a;
+	border-color: #9f003f;
+	color: white;
+	text-decoration: none;
+}
+
+a:link{
+	color: #0000aa;
+}
+a:hover{
+	color: #8a002a;
+	text-decoration: underline;
+}
+/*=============== /Contact Us ===============*/
+
+
+/*=============== Gallery ===============*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/*=============== /Gallery ===============*/
+
+/*===============  Navbar  ===============*/
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+#navbar a:hover{
+	text-decoration: underline;
+	background-color: #222;
+}
+
+.content{
+
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 50px;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+/*===============  /Navbar  ===============*/

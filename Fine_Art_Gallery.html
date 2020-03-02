@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Fine Art</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css/lightbox.css" />
+		<script src="js/lightbox-plus-jquery.js"></script>
+		<script>
+    		lightbox.option({
+    	  	'fitImagesInViewport': false;
+    		})
+		</script>
+	</head>
+	<body style="margin: 0px;">
+		<a id="Home"></a>
+		<!-- Logo and Title -->
+		<div style="width: 100%">
+			<div style="width: 100%; margin-left: 0%">
+				<a href="index.html" style=" width: 100px; z-index: 10 ;color:black; text-decoration:none; border-bottom-style: solid; border-bottom-color	: #8f8f8f;">
+					<div style=" margin-left: 25%;width: 50%; height: 300px; z-index: 10; position: absolute;"></div>
+				</a>
+				<div class="logo">	
+					<p class="NameTitle"><br>Fresh<br>Northwest<br>Design</p>
+				</div>
+			</div>
+		</div>
+		<!-- /Logo and Title -->
+		
+		<!-- Sticky Navbar -->
+		<div id="navbar" class="NavText">
+			<a href="./index.html">Home</a>
+  			<a onclick="document.getElementById('Home').scrollIntoView(true,{behavior: 'smooth', block: 'end', inline: 'nearest'});">Top</a>
+  			<a href="index.html#Galleries">Gallery</a>
+ 			<a href="index.html#About">About</a>
+  			<a href="Request_Quote.html">Contact</a>
+		</div>
+		<!-- /Sticky Navbar -->
+		
+		<!-- Gallery Description -->		
+		<div class="content" style="border-top-style: solid; border-top-color: #8f8f8f; border-bottom-style: solid; border-bottom-color: #8f8f8f; width:99.9%">
+			<div class="container" style="margin: 0px">
+				<p class="SectionTitle" style="widht: 90%">Unique Artwork</p>
+				<div style="margin: 15px">
+					<p>	Just give us your idea and we will create something new and completely unique.</p>
+					<p>
+						We can create one of a kind groupings or single bottles. The artistic direction can be
+						original or it can be based upon an artist's original painting or a photograph.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- /Gallery Description -->
+		
+		<div class="GalleryBackground">
+			<div class="row">
+				<div class="column" id="column_1">
+					<!-- Image Column 1 (Gets filled by javasctipt) -->
+				</div>
+				<div class="column" id="column_2">
+					<!-- Image Column 2 (Gets filled by javasctipt) -->
+				</div>
+				<div class="column" id="column_3">
+					<!-- Image Column 3 (Gets filled by javasctipt) -->
+				</div>
+			</div>
+			
+			<script src="js/Gallery_Column.js"></script>
+			<script>
+				/*====================================== Create Image Items ======================================*/
+				//Images For Column 1
+				var column_1_array = [];
+				//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+				column_1_array.push({file:"img/Fine_Art/FNWDChristmasSet.jpg"          	, disc:"My Caption 1"});
+				column_1_array.push({file:"img/Fine_Art/FNWDChristmasSetBacks.jpg"     	, disc:"My Caption 2"});
+				column_1_array.push({file:"img/Fine_Art/Lamb. Ferrari Aston M. Set.jpg"	, disc:"My Caption 3"});
+				column_1_array.push({file:"img/Fine_Art/NorthernLights.jpg"            	, disc:"My Caption 4"});
+				column_1_array.push({file:"img/Fine_Art/7wonders.jpg"                  	, disc:"My Caption 5"});
+				column_1_array.push({file:"img/Fine_Art/YellowStoneClub_2019.jpg"      	, disc:"My Caption 6"});
+	
+				//Images For Column 2
+				var column_2_array = [];
+				//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+				column_2_array.push({file:"img/Fine_Art/65 Roses.jpg" 							, disc:"65 Roses Cystic Fibrosis auction bottle."})
+				column_2_array.push({file:"img/Fine_Art/Sun_Valley_2015.jpg"     				, disc:"My Caption 2"});
+				column_2_array.push({file:"img/Fine_Art/TAM_Front.jpg"           				, disc:"My Caption 3"});
+				column_2_array.push({file:"img/Fine_Art/Woodland Zoo 2010.jpg"   				, disc:"My Caption 4"});
+				column_2_array.push({file:"img/Fine_Art/Woodland_Park_Zoo.jpg"   				, disc:"My Caption 5"});
+				column_2_array.push({file:"img/Fine_Art/PageHummingBirdsForMovieSmaller.jpg"	, disc:"My Caption 4"});
+	
+				//Images For Column 3
+				var column_3_array = [];
+				//Syntax {file:<path/file name>, disc:<Disctiption for image caption>}
+				column_3_array.push({file:"img/Fine_Art/MosquitoFleet_Galaxy.JPG"   , disc:"My Caption 2"});
+				column_3_array.push({file:"img/Fine_Art/SOTA_SAMI_Auction.jpg"   	, disc:"My Caption 1"});
+				column_3_array.push({file:"img/Fine_Art/Lemay_2015.jpg"             , disc:"My Caption 3"});
+				column_3_array.push({file:"img/Fine_Art/Left 4 Dead.jpg"			, disc:"My Caption 1"});
+				
+				/*====================================== /Create Image Items ======================================*/
+	
+	
+				/*====================================== Create HTML Code ======================================*/
+				//Put HTML into Elements of ID
+				document.getElementById("column_1").innerHTML = CreateColumn(column_1_array);
+				document.getElementById("column_2").innerHTML = CreateColumn(column_2_array);
+				document.getElementById("column_3").innerHTML = CreateColumn(column_3_array);
+	
+				/*====================================== /Create HTML Code ======================================*/
+
+			</script>
+
+			<script>
+				//script to set the width of the elements in the columns
+				var elements = document.getElementsByClassName("column");
+				var i;
+				
+				//for each element in column set width
+				for (i = 0; i < elements.length; i++) {
+					elements[i].style.flex = "25%";
+				}
+			</script>
+		</div>
+			<!------------------------------------------------------ Contact Us ------------------------------------------------------>
+		<a class="anchor" name="Contact"></a>
+		<div style="border-top-style: solid; border-top-color: #8f8f8f;">
+			<p style="margin: 10px;"class="SectionTitle">Contact US</p>
+
+			
+			<div class="ContactArea">
+				<div class="ContactRow">
+  					<div class="ContactColumn">
+  						<p class="SmallTitle">Phone</p>
+						<a href="tel:2538575300" class="ContactText" title="Call Us">253-857-5300</a>
+						<p class="SmallTitle">Email</p>
+						<a href="mailto:Info@freshnwdesign.com" class="ContactText" title="Send us an Email">Info@freshnwdesign.com</a>
+						<p class="SmallTitle">Address</p>
+						<p class="ContactText">915 26th Avenue Northwest<br>Gig Harbor, WA, 98335<br>Suite B5<br>
+						<a href="http://www.google.com/maps/search/Fresh+Northwest+Design+915+26th+Avenue+Northwest+Gig+Harbor+WA+98335+Suite+B5" title="Get Directions"target="_blank" class="ContactText">Map & Directions</a></p>
+  					</div>
+  					<div class="ContactColumn">
+  						<br>
+  						<br>
+  						<div>
+  							<a href="https://www.facebook.com/freshnwdesign/" class="SocialText" target="_blank" title="Follow us on Facebook">
+  								<span class="SocialText">Facebook</span>
+  								<img src="img/Facebook_Wine.jpg" class="SocialLogo"/>
+  							</a>
+  						</div>
+  						<br>
+  						<div>
+  							<a href="https://www.instagram.com/freshnorthwestdesign/" class="SocialText" target="_blank" title="Follow us on Instagram">
+  								<span class="SocialText">Instagram</span>
+  								<img src="img/Instagram_Wine.jpg" class="SocialLogo"/>
+  							</a>
+  						</div>
+  					</div>
+  					<div class="ContactColumn">
+  						<br>
+  						<br>
+  						<a href="./Request_Quote.html#Request_Quote" class="button" style="color: white">Request Quote</a> 
+  					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!------------------------------------------------------ /Contact Us ------------------------------------------------------>
+		
+		<!------------------------------------------------------ Navbar Script ------------------------------------------------------>
+		<script type="text/javascript">
+			// When the user scrolls the page, execute myFunction
+			window.onscroll = function() {myFunction()};
+	
+			// Get the navbar
+			var navbar = document.getElementById("navbar");
+	
+			// Get the offset position of the navbar
+			var sticky = navbar.offsetTop;
+			
+			// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+		<!------------------------------------------------------ /Navbar Script ------------------------------------------------------>
+	</body>
+</html>

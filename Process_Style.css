@@ -1,0 +1,21 @@
+/*Parallax Image 1*/
+.process_1{
+	background: url('img/Fine_Art/TAM_Front.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}
+/*Parallax Image 2*/
+.process_2{
+	background: url('img/Fine_Art/FNWDChristmasSet.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}
+/*Parallax Image 3*/
+.process_3{
+	background: url('img/Fine_Art/FNWDChristmasSetBacks.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}

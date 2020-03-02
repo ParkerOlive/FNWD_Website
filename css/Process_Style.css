@@ -1,0 +1,53 @@
+@font-face { font-family: Trend_Slab; src: url('Latinotype - TrendSlabFour.otf'); } 
+
+
+.container{
+	margin-top: 0;
+	background: #fffff;
+	font-size: 24px;
+	overflow: hidden;
+}
+.parallax_design{
+	background: url('img/TAM_Front.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}
+.parallax_prep{
+	background: url('img/FNWDChristmasSet.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}
+.parallax_blasting{
+	background: url('img/FNWDChristmasSetBacks.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}
+.parallax_painting{
+	background: url('img/FNWDChristmasSetBacks.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}
+.NameTitle { 
+	font-family: Trend_Slab; 
+	font-size: 40px;
+	margin-right: 57%;
+	margin-left: 43%;
+}
+.logo {
+	background: url('img/logo_No_Words.jpg') no-repeat center;
+	background-size: 500px 400px;
+	margin-right: 0%;
+	margin-left: 0%;
+	margin-top: 0px;
+	height: 300px;
+	overflow: hidden;
+	
+}
+.SectionTitle { 
+	font-family: Trend_Slab; 
+	font-size: 36px;
+}
